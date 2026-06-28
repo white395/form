@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>受講申込フォーム（テスト）</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+            background-color: #f4f6f0;
+            color: #2c3320;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1a3010;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>受講申込フォーム（テスト用）</h1>
+    
+    <form id="ssgForm" action="https://ssgform.com/s/PHNUyOYdfmEy" method="post" data-ssgform-thanks="https://script.google.com/a/macros/nrk.or.jp/s/AKfycbxvysvMD6lfQRi3IVSSK_JqTJo_VWagG6iO9g_U2oQUtWnSZ5puNeU--484qqNrepV0YQ/exec">
+        
+        <div class="form-group">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="お名前" placeholder="例：山田 太郎" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="メールアドレス" placeholder="例：sample@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="company">所属（農協名・会社名など）</label>
+            <input type="text" id="company" name="所属" placeholder="例：○○農業協同組合">
+        </div>
+
+        <button type="submit">申し込む</button>
+    </form>
+</div>
+
+</body>
+</html>
