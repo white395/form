@@ -424,7 +424,7 @@
   // 受講生カウンター
   let studentCount = 0;
 
-  // 受講生フィールドを追加
+  // 受講生フィールドを追加（※メールに英語を載せないよう、name属性を完全に削除しました）
   function addStudent() {
     studentCount++;
     const div = document.createElement("div");
@@ -498,14 +498,6 @@
     if(document.getElementById("dummy_autofill_preventer_1")) document.getElementById("dummy_autofill_preventer_1").value = "";
     if(document.getElementById("dummy_autofill_preventer_2")) document.getElementById("dummy_autofill_preventer_2").value = "";
   }
-
-  window.addEventListener("pageshow", function() {
-    clearStudentFields();
-    setTimeout(clearStudentFields, 50);
-    setTimeout(clearStudentFields, 200);
-    setTimeout(clearStudentFields, 600);
-  });
-  window.addEventListener("load", clearStudentFields);
 
   // バリデーション
   function validate() {
